@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "smilu97",
   "license": "MIT",
+  "repository": "https://github.com/smilu97/Rexel",
   "scripts": {
     "start": "webpack && node ./dist/app.js",
     "build": "webpack"
