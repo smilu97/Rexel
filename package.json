@@ -1,13 +1,16 @@
 {
-  "name": "excel-jsx",
-  "version": "1.0.0",
-  "description": "Define excel template with JSX",
-  "main": "index.js",
+  "name": "rexel",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=12.9.0"
+  },
+  "description": "Define excel template like React",
+  "main": "src/index.js",
   "author": "smilu97",
   "license": "MIT",
   "repository": "https://github.com/smilu97/Rexel",
   "scripts": {
-    "start": "webpack && node ./dist/app.js",
+    "test": "webpack && node ./dist/app.js",
     "build": "webpack"
   },
   "dependencies": {
