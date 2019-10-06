@@ -1,25 +1,7 @@
 const Rexel = require('./Rexel');
 const populate = require('xlsx-populate');
 
-function styled(Component, style) {
-  return function Styled(props) {
-    const {style: pStyle, ...pProps} = props;
-    const combined = pStyle ? {...style, pStyle} : style;
-    console.log('pProps:', props);
-    return <Component style={combined} {...pProps} />;
-  }
-}
-
-function Value(sheet, props) {;
-  console.log('props:', props);
-  const {bx, by, style, children} = props;
-  const cell = sheet.row(bx).cell(by);
-  cell.value(String(children));
-  if (style) {
-    cell.style(style);
-  }
-}
-Value.primitive = true;
+const {Value, styled} = Rexel;
 
 const SValue = styled(Value, {
   fontColor: 'ff0000',
