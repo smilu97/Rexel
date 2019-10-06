@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const Rexel = require('./Rexel');
+const Rexel = require('./src');
 const populate = require('xlsx-populate');
 
 const {Value, styled} = Rexel;
