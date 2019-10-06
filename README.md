@@ -1,3 +1,9 @@
+# Rexel
+
+Rexel is simple library for making xlsx-template in JSX style.
+
+Highly recommend to copy `example/` folder, and start your project.
+
 ## Sample code
 
 ```jsx
