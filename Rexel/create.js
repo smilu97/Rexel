@@ -27,7 +27,7 @@ function create(component, props, ...children) {
     }
 
     return () => {
-      props.children = children;
+      props.children = props.children || children;
       const body = component.primitive
         ? component(sheet, props)
         : component(props);
