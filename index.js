@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const Rexel = require('./Rexel');
 const populate = require('xlsx-populate');
 
@@ -13,7 +14,7 @@ function TestComponent(props) {
     <>
       <SValue bx={bx} by={by}>Hello!</SValue>
       <SValue bx={bx + 1} by={by}>World!</SValue>
-      {Array(10).fill(undefined).map((und, idx) => (
+      {_.range(0, 10).map((idx) => (
         <SValue bx={bx + 2} by={by + idx}>{idx}</SValue>
       ))}
     </>
