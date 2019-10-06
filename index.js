@@ -20,8 +20,6 @@ function TestComponent(props) {
   );
 }
 
-populate.fromBlankAsync().then((workbook) => {
-  const sheet = workbook.sheet(0);
-  Rexel.render(sheet, <TestComponent bx={3} by={3} />);
-  workbook.toFileAsync('./sample.xlsx');
+Rexel.save('./sample.xlsx', {
+  Sheet1: <TestComponent bx={3} by={3} />,
 });
